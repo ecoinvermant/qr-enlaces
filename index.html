@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Patrocinio - Chatarras Raid Merzouga</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        raid: {
+                            orange: '#F25410',
+                            darkorange: '#D13F00',
+                            sand: '#F5E6CA',
+                            sandlight: '#FFF9E8',
+                            dark: '#181513',
+                            charcoal: '#2A2522',
+                            yellow: '#FFB800'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        marker: ['"Permanent Marker"', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Brush Effect Backgrounds & Textured Utilities */
+        .brush-title {
+            background: linear-gradient(135deg, #F25410 0%, #D13F00 100%);
+            clip-path: polygon(0% 0%, 100% 2%, 98% 95%, 2% 100%);
+        }
+        .brush-badge {
+            background: #181513;
+            transform: rotate(-1.5deg);
+        }
+        .desert-bg {
+            background-color: #F5E6CA;
+            background-image: radial-gradient(#181513 0.75px, transparent 0.75px), radial-gradient(#181513 0.75px, #F5E6CA 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0,15px 15px;
+            background-opacity: 0.05;
+        }
+        .photo-polaroid {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+            transform: rotate(-1deg);
+            transition: transform 0.3s ease;
+        }
+        .photo-polaroid:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-[#ECE2D0] text-raid-dark font-sans min-h-screen pb-12 selection:bg-raid-orange selection:text-white">
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+
+        <!-- HEADER SECTION -->
+        <header class="relative bg-raid-dark text-white rounded-3xl p-6 sm:p-10 overflow-hidden shadow-2xl border-4 border-raid-orange mb-8">
+            <!-- Background Decorative Elements -->
+            <div class="absolute -right-10 -bottom-10 opacity-10 text-raid-orange text-9xl font-black select-none pointer-events-none">
+                <i class="fa-solid font-black fa-car-side"></i>
+            </div>
+            
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+                <!-- Title Block -->
+                <div class="text-center md:text-left space-y-2 max-w-2xl">
+                    <div class="inline-block bg-raid-orange text-white text-xs sm:text-sm font-extrabold px-4 py-1 uppercase tracking-widest rounded-full mb-1 shadow-md">
+                        Dossier Oficial de Esponsorización
+                    </div>
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-none text-white drop-shadow-md">
+                        Propuesta de <span class="text-raid-orange underline decoration-raid-yellow decoration-4">Patrocinio</span>
+                    </h1>
+                    <h2 class="font-marker text-2xl sm:text-4xl text-raid-yellow mt-1 transform -rotate-1">
+                        CHATARRAS RAID <span class="text-white text-xl sm:text-2xl font-sans font-normal">— Edición Merzouga —</span>
+                    </h2>
+                    <p class="font-marker text-raid-sand text-lg sm:text-xl pt-2">
+                        "Una pequeña ayuda, nos lleva muy lejos"
+                    </p>
+                </div>
+
+                <!-- Date & Location Badge -->
+                <div class="bg-raid-charcoal border-2 border-raid-orange p-5 rounded-2xl text-center shadow-lg transform rotate-1 flex flex-col items-center min-w-[240px]">
+                    <div class="text-raid-orange text-3xl mb-1">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Fecha del Raid</span>
+                    <span class="text-xl sm:text-2xl font-extrabold text-white">13/03/27 <span class="text-raid-orange">al</span> 19/03/27</span>
+                    <span class="text-sm font-semibold text-raid-yellow mt-1">Marzo 2027 • Marruecos 🇲🇦</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-10">
+
+            <!-- LEFT COLUMN: NUESTRO PROYECTO -->
+            <div class="lg:col-span-4 bg-white p-6 sm:p-8 rounded-3xl shadow-xl border-2 border-raid-dark/10 relative">
+                <div class="brush-title text-white p-3 px-5 rounded-lg inline-block shadow-md mb-6 transform -rotate-2">
+                    <h3 class="font-black text-xl uppercase tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-compass"></i> Nuestro Proyecto
+                    </h3>
+                </div>
+
+                <div class="space-y-4 text-gray-800 leading-relaxed font-medium">
+                    <p>
+                        Somos dos amigos, apasionados del motor, que hemos decidido vivir una aventura diferente: participar en el <strong class="text-raid-dark font-extrabold">CHATARRAS RAID – Edición Merzouga</strong>.
+                    </p>
+                    <p>
+                        Nuestro compañero de viaje será un humilde pero querido <span class="bg-raid-sand px-2 py-0.5 rounded font-bold text-raid-dark border border-raid-orange/30">Ford Focus MK1</span>, preparado para afrontar el reto de cruzar Marruecos y llegar hasta las icónicas dunas de Merzouga.
+                    </p>
+                    <div class="p-4 bg-raid-sandlight rounded-2xl border-l-4 border-raid-orange text-raid-dark font-marker text-lg my-4 shadow-inner">
+                        "No somos un equipo profesional, pero sí tenemos muchas ganas y un gran sueño."
+                    </div>
+                </div>
+            </div>
+
+            <!-- CENTER COLUMN: VEHICLE & TEAM PHOTO -->
+            <div class="lg:col-span-4 flex flex-col items-center justify-center">
+                <div class="photo-polaroid bg-white p-4 pb-6 rounded-xl border border-gray-200 w-full max-w-md">
+                    <div class="relative overflow-hidden rounded-lg aspect-[4/3] mb-4 bg-gray-900 group">
+                        <img id="team-photo" src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800" alt="Ford Focus MK1 Raid" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-3 left-3 bg-raid-orange text-white text-xs font-bold px-3 py-1 rounded-full uppercase">
+                            Marruecos 2027
+                        </span>
+                    </div>
+                    <div class="text-center space-y-1">
+                        <div class="flex items-center justify-center gap-2">
+                            <span class="font-black text-2xl tracking-wide text-raid-dark uppercase">FORD FOCUS MK1</span>
+                            <span class="bg-blue-600 text-white text-xs px-2 py-0.5 rounded-full font-bold">Ford</span>
+                        </div>
+                        <p class="font-marker text-raid-darkorange text-lg">DOS AVENTUREROS • UN OBJETIVO</p>
+                        <p class="font-black text-raid-dark tracking-widest text-2xl uppercase">MERZOUGA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: POR QUÉ PATROCINARNOS -->
+            <div class="lg:col-span-4 bg-white p-6 sm:p-8 rounded-3xl shadow-xl border-2 border-raid-dark/10">
+                <div class="brush-title text-white p-3 px-5 rounded-lg inline-block shadow-md mb-6 transform rotate-1">
+                    <h3 class="font-black text-xl uppercase tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-circle-question"></i> ¿Por Qué Patrocinarnos?
+                    </h3>
+                </div>
+
+                <div class="space-y-5">
+                    <div class="flex items-start gap-4 p-2 hover:bg-raid-sandlight rounded-xl transition-colors">
+                        <div class="w-12 h-12 rounded-2xl bg-raid-orange text-white flex items-center justify-center text-xl shrink-0 shadow-md transform -rotate-3">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-raid-dark">Tu apoyo hace historia</h4>
+                            <p class="text-sm text-gray-600">Porque tu contribución hace posible que esta aventura sea una realidad tangible.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-2 hover:bg-raid-sandlight rounded-xl transition-colors">
+                        <div class="w-12 h-12 rounded-2xl bg-raid-orange text-white flex items-center justify-center text-xl shrink-0 shadow-md transform rotate-2">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-raid-dark">Visibilidad Continua</h4>
+                            <p class="text-sm text-gray-600">Damos visibilidad a tu empresa durante todo el proceso de preparación, viaje y el raid.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-2 hover:bg-raid-sandlight rounded-xl transition-colors">
+                        <div class="w-12 h-12 rounded-2xl bg-raid-orange text-white flex items-center justify-center text-xl shrink-0 shadow-md transform -rotate-2">
+                            <i class="fa-solid fa-mountain"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-raid-dark">Impacto Cercano y Real</h4>
+                            <p class="text-sm text-gray-600">Una forma diferente, cercana y auténtica de conectar con nuevos clientes y audiencia.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-2 hover:bg-raid-sandlight rounded-xl transition-colors">
+                        <div class="w-12 h-12 rounded-2xl bg-raid-orange text-white flex items-center justify-center text-xl shrink-0 shadow-md transform rotate-3">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-raid-dark">Tu Marca en Cada Km</h4>
+                            <p class="text-sm text-gray-600">En cada kilómetro de desierto llevaremos el nombre de tu empresa con nosotros.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MIDDLE SECTION: WHAT WE NEED & WHAT WE OFFER -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+
+            <!-- LEFT: QUÉ NECESITAMOS -->
+            <div class="bg-raid-dark text-white p-6 sm:p-8 rounded-3xl shadow-xl border-2 border-raid-orange flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-black text-2xl uppercase tracking-wider text-raid-orange">
+                            ¿Qué Necesitamos?
+                        </h3>
+                        <span class="text-xs bg-raid-charcoal border border-gray-700 text-gray-300 px-3 py-1 rounded-full uppercase">Para el reto</span>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-6">Cualquier aportación, material o ayuda será igualmente bienvenida y muy agradecida por todo el equipo.</p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                        <!-- Card 1 -->
+                        <div class="bg-raid-charcoal p-5 rounded-2xl border border-gray-700 text-center flex flex-col items-center justify-between hover:border-raid-orange transition-all">
+                            <div class="text-raid-yellow text-3xl mb-2">
+                                <i class="fa-solid fa-coins"></i>
+                            </div>
+                            <h4 class="font-bold uppercase text-sm tracking-wider mb-3">Aportación Económica</h4>
+                            <button onclick="openContactModal('Aportación Económica')" class="w-full bg-raid-orange hover:bg-raid-darkorange text-white font-extrabold text-xs py-2.5 px-3 rounded-xl transition transform active:scale-95 shadow-lg">
+                                CONSULTAR CON EQUIPO
+                            </button>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="bg-raid-charcoal p-5 rounded-2xl border border-gray-700 text-center flex flex-col items-center justify-between hover:border-raid-orange transition-all">
+                            <div class="text-raid-yellow text-3xl mb-2">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <h4 class="font-bold uppercase text-sm tracking-wider mb-3">Material / Producto</h4>
+                            <button onclick="openContactModal('Material / Producto')" class="w-full bg-raid-orange hover:bg-raid-darkorange text-white font-extrabold text-xs py-2.5 px-3 rounded-xl transition transform active:scale-95 shadow-lg">
+                                CONSULTAR CON EQUIPO
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center font-marker text-raid-sand text-sm border-t border-gray-800 pt-4">
+                    ¡Cualquier grano de arena cuenta en el desierto!
+                </div>
+            </div>
+
+            <!-- RIGHT: QUÉ OFRECEMOS A CAMBIO -->
+            <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-xl border-2 border-raid-dark/10 flex flex-col justify-between">
+                <div>
+                    <h3 class="font-black text-2xl uppercase tracking-wider text-raid-dark mb-2">
+                        ¿Qué Ofrecemos A Cambio?
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-6">Garantizamos máxima difusión y retribución por tu valioso apoyo:</p>
+
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-raid-orange text-lg mt-0.5"></i>
+                            <span class="text-gray-800 font-semibold text-sm">Logotipo de tu empresa destacado en nuestro Ford Focus MK1.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-raid-orange text-lg mt-0.5"></i>
+                            <span class="text-gray-800 font-semibold text-sm">Fotografías de alta calidad del vehículo durante la preparación y el raid.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-raid-orange text-lg mt-0.5"></i>
+                            <span class="text-gray-800 font-semibold text-sm">Menciones y etiquetas frecuentes en nuestras redes sociales.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-raid-orange text-lg mt-0.5"></i>
+                            <span class="text-gray-800 font-semibold text-sm">Contenido exclusivo en vídeo y transmisiones en directo durante la aventura.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-raid-orange text-lg mt-0.5"></i>
+                            <span class="text-gray-800 font-semibold text-sm">Agradecimiento público oficial a todos los colaboradores.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-raid-orange text-lg mt-0.5"></i>
+                            <span class="text-gray-800 font-semibold text-sm">Recuerdos y pack de fotos desde Marruecos para que podáis compartirlas.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- INTERACTIVE MEDIA & CONTACT SECTION -->
+        <div class="bg-raid-dark text-white rounded-3xl p-6 sm:p-8 shadow-2xl border-4 border-raid-charcoal relative overflow-hidden mb-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- CONTACT DATA (Left Side) -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-users text-raid-orange text-2xl"></i>
+                        <h3 class="font-black text-2xl uppercase tracking-wider text-white">Datos del Equipo</h3>
+                    </div>
+                    <p class="text-xs text-gray-400">Ponte en contacto con nosotros directamente para unir tu marca al proyecto:</p>
+
+                    <div class="space-y-2.5 text-sm">
+                        <div class="flex justify-between items-center bg-raid-charcoal p-2.5 px-4 rounded-xl border border-gray-800">
+                            <span class="text-gray-400 font-medium"><i class="fa-solid fa-user text-raid-orange mr-2"></i>Piloto 1:</span>
+                            <span class="font-bold text-white" id="display-piloto1">Carlos Martínez</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-raid-charcoal p-2.5 px-4 rounded-xl border border-gray-800">
+                            <span class="text-gray-400 font-medium"><i class="fa-solid fa-user-gear text-raid-orange mr-2"></i>Copiloto:</span>
+                            <span class="font-bold text-white" id="display-piloto2">David Gómez</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-raid-charcoal p-2.5 px-4 rounded-xl border border-gray-800">
+                            <span class="text-gray-400 font-medium"><i class="fa-solid fa-phone text-raid-orange mr-2"></i>Teléfono:</span>
+                            <a href="tel:+34600000000" class="font-bold text-raid-yellow hover:underline" id="display-telefono">+34 600 000 000</a>
+                        </div>
+                        <div class="flex justify-between items-center bg-raid-charcoal p-2.5 px-4 rounded-xl border border-gray-800">
+                            <span class="text-gray-400 font-medium"><i class="fa-brands fa-instagram text-raid-orange mr-2"></i>Instagram:</span>
+                            <span class="font-bold text-white" id="display-instagram">@focus_chatarras_raid</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-raid-charcoal p-2.5 px-4 rounded-xl border border-gray-800">
+                            <span class="text-gray-400 font-medium"><i class="fa-brands fa-tiktok text-raid-orange mr-2"></i>TikTok:</span>
+                            <span class="font-bold text-white" id="display-tiktok">@focus_chatarras_raid</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-raid-charcoal p-2.5 px-4 rounded-xl border border-gray-800">
+                            <span class="text-gray-400 font-medium"><i class="fa-solid fa-envelope text-raid-orange mr-2"></i>Email:</span>
+                            <a href="mailto:equipo@chatarrasraid.com" class="font-bold text-raid-yellow hover:underline" id="display-email">equipo@chatarrasraid.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- YOUTUBE & LINKS INTERACTIVE PANEL (Right Side) -->
+                <div class="lg:col-span-7 bg-raid-charcoal p-6 rounded-2xl border border-gray-700 flex flex-col justify-between space-y-6">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-black text-lg text-white uppercase flex items-center gap-2">
+                                <i class="fa-brands fa-youtube text-red-500 text-xl"></i> Multimedia y Enlaces
+                            </h4>
+                            <span class="text-xs bg-red-600/20 text-red-400 border border-red-500/30 px-2 py-0.5 rounded font-bold">Interactivo</span>
+                        </div>
+
+                        <!-- YouTube Player Embed Container -->
+                        <div class="relative w-full aspect-video bg-black rounded-xl overflow-hidden shadow-lg border border-gray-800 mb-4">
+                            <iframe id="youtube-iframe" class="w-full h-full" src="https://www.youtube.com/embed/d38pQLkU3K0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                        <!-- URL Input Control for YouTube -->
+                        <div class="space-y-2">
+                            <label for="yt-url-input" class="text-xs font-bold text-gray-300 flex items-center gap-1">
+                                <i class="fa-solid fa-link text-raid-orange"></i> Cambiar Enlace de Vídeo de YouTube:
+                            </label>
+                            <div class="flex gap-2">
+                                <input type="text" id="yt-url-input" placeholder="https://www.youtube.com/watch?v=..." class="bg-raid-dark text-white text-xs px-3 py-2 rounded-xl border border-gray-700 flex-1 focus:outline-none focus:border-raid-orange">
+                                <button onclick="updateYouTubeVideo()" class="bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-4 py-2 rounded-xl transition">
+                                    Cargar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- External Link Section -->
+                    <div class="pt-4 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-raid-orange/20 text-raid-orange border border-raid-orange/40 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-globe text-lg"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-xs font-bold text-white uppercase">Información General del Raid</h5>
+                                <p class="text-xs text-gray-400">Web Oficial del evento y reglamento</p>
+                            </div>
+                        </div>
+                        <a id="external-link-btn" href="https://chatarrasraid.com" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-raid-orange hover:bg-raid-darkorange text-white font-extrabold text-xs py-2.5 px-5 rounded-xl transition text-center shadow-md flex items-center justify-center gap-2">
+                            <span>Visitar Web Oficial</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FOOTER BADGE -->
+        <footer class="text-center py-6 text-raid-dark border-t-2 border-raid-dark/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-flag-checkered text-xl text-raid-orange"></i>
+                <span class="font-marker text-xl">Juntos hasta Merzouga</span>
+            </div>
+            <p class="text-xs font-bold text-gray-600">
+                © 2027 Equipo Ford Focus MK1 - Chatarras Raid. Todos los derechos reservados.
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- CONTACT / INQUIRY MODAL -->
+    <div id="contact-modal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
+        <div class="bg-raid-dark text-white max-w-md w-full p-6 sm:p-8 rounded-3xl border-2 border-raid-orange shadow-2xl relative animate-fade-in">
+            <button onclick="closeContactModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl w-8 h-8 flex items-center justify-center rounded-full bg-raid-charcoal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-14 h-14 bg-raid-orange text-white rounded-2xl flex items-center justify-center text-2xl mx-auto mb-3 shadow-lg">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+                <h3 class="font-black text-2xl uppercase text-white" id="modal-title">Consultar con el Equipo</h3>
+                <p class="text-xs text-gray-300 mt-1">Envíanos un mensaje rápido para coordinar tu patrocinio</p>
+            </div>
+
+            <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-300 mb-1">Tu Nombre / Empresa</label>
+                    <input type="text" required placeholder="Ej: Talleres Gomez / Juan" class="w-full bg-raid-charcoal border border-gray-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-raid-orange">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-300 mb-1">Teléfono o Email de contacto</label>
+                    <input type="text" required placeholder="Ej: 612345678 o contacto@empresa.com" class="w-full bg-raid-charcoal border border-gray-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-raid-orange">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-gray-300 mb-1">Mensaje o Propuesta</label>
+                    <textarea rows="3" placeholder="¿Cómo te gustaría colaborar?" class="w-full bg-raid-charcoal border border-gray-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-raid-orange"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-raid-orange hover:bg-raid-darkorange text-white font-extrabold text-sm py-3 rounded-xl transition shadow-lg uppercase tracking-wider">
+                    Enviar Mensaje
+                </button>
+            </form>
+            <div id="modal-success-msg" class="hidden text-center text-green-400 text-xs font-bold mt-3">
+                ¡Gracias! Nos pondremos en contacto contigo lo antes posible.
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        function openContactModal(type) {
+            const modal = document.getElementById('contact-modal');
+            const title = document.getElementById('modal-title');
+            if (type) {
+                title.innerText = 'Interés en: ' + type;
+            } else {
+                title.innerText = 'Consultar con el Equipo';
+            }
+            modal.classList.remove('hidden');
+        }
+
+        function closeContactModal() {
+            const modal = document.getElementById('contact-modal');
+            modal.classList.add('hidden');
+            document.getElementById('modal-success-msg').classList.add('hidden');
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const successMsg = document.getElementById('modal-success-msg');
+            successMsg.classList.remove('hidden');
+            setTimeout(() => {
+                closeContactModal();
+            }, 2000);
+        }
+
+        // Function to extract video ID from YouTube URL and update iframe
+        function updateYouTubeVideo() {
+            const urlInput = document.getElementById('yt-url-input').value.trim();
+            const iframe = document.getElementById('youtube-iframe');
+            
+            if (!urlInput) return;
+
+            let videoId = '';
+            
+            // RegEx for standard and shortened YouTube links
+            const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+            const match = urlInput.match(regExp);
+
+            if (match && match[2].length === 11) {
+                videoId = match[2];
+                iframe.src = 'https://www.youtube.com/embed/' + videoId;
+            } else {
+                // Custom UI notification instead of alert
+                const modal = document.getElementById('contact-modal');
+                const title = document.getElementById('modal-title');
+                title.innerText = "URL de YouTube No Válida";
+                document.getElementById('modal-success-msg').innerText = "Por favor introduce un enlace válido de YouTube (ej. https://www.youtube.com/watch?v=...)";
+                document.getElementById('modal-success-msg').classList.remove('hidden');
+                modal.classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
